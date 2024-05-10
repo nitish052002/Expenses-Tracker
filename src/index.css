@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+  --bg: #3b3b3b;
+  --orange: #ff9304;
+  --purple: #a000ff;
+  --yellow: #fde006;
+  --green: #43967b;
+  --red: #ff3e3e;
+  --grey: #626262;
+  --secondary-grey: #9b9b9b;
+  --secondary-purple: #8784d2;
+  --secondary-oragne: #f4bb4a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  color: white;
+  font-family: "Ubuntu Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+   
+}

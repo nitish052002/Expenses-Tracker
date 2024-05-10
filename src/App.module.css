@@ -1,0 +1,44 @@
+.startBtn {
+  outline: none;
+  border: 2px solid white;
+  border-radius: 4px;
+  background: transparent;
+  padding: 10px 19px;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.title {
+  letter-spacing: 2px;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.pnk {
+  color: purple;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  transition: flex-wrap  0.5s ease;
+  
+}
+
+
+
+.errContainer {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Jersey 25 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;   
+  padding: 8px 1rem;
+  color: white;
+  
+}
+
+
+ 

@@ -1,0 +1,106 @@
+.modalBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  visibility: hidden;
+  transition: background-color 250ms linear;
+}
+
+.modalContent {
+  position: fixed;
+  top: 60%;
+  left: 55%;
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+  margin-top: -18%;
+  margin-left: -25%;
+  padding: 30px;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transform: scale(0);
+  transition: transform 250ms ease;
+  visibility: hidden;
+  z-index: 20;
+}
+
+.modalBg.active {
+  visibility: visible;
+  background-color: #ffffff;
+  opacity: 0.7;
+  transition: background-color 250ms linear;
+}
+.modalContent.active {
+  visibility: visible;
+  transform: scale(1);
+  transition: transform 250ms ease;
+  z-index: 111;
+  color: black;
+}
+
+.modalContent .close {
+  position: relative;
+  float: right;
+  font-size: 18px;
+  transition: transform 500ms ease;
+  z-index: 11;
+}
+.modalContent .close:hover {
+  color: #3498db;
+  transform: rotate(540deg);
+}
+.modalContent h2 {
+  margin-bottom: 1rem;
+}
+
+form .inputCell {
+  background: white;
+}
+
+form input::placeholder {
+  color: #cacaca;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+form .inputCell,
+.modalBtn {
+  box-shadow: var(--shadow-three);
+  padding: 15px 1rem;
+  font-size: 1.2rem;
+  flex: 1;
+  border-radius: 12px;
+}
+
+.modalBtn:hover {
+  box-shadow: none;
+}
+form .addBtn {
+  background: var(--orange);
+  color: white;
+  width: 260px;
+  flex: none;
+  cursor: pointer;
+}
+
+form .clBtn {
+  flex: none;
+  cursor: pointer;
+  width: 100px;
+}
+
+form .row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}

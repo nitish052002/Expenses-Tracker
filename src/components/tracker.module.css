@@ -1,0 +1,83 @@
+.expenseContainer {
+  border-radius: 8px;
+  background: var(--grey);
+ 
+ 
+}
+
+.expenseContainer .content {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns:  2fr 2fr 1fr;
+  gap: 2.5rem;
+  padding: 0 4rem;
+  
+}
+
+.content .wallet,
+.content .expenses {
+  border-radius: var(--radius-md);
+  background: var(--secondary-grey);
+  box-shadow: var(--shadow-two);
+  text-align: center;
+  min-width: 400px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+   .btn {
+  border-radius: 16px;
+  padding: 10px 22px;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.7s;
+  margin: 1.3rem;
+}
+
+.wallet .btn {
+  background: linear-gradient(90deg, #b5dc52 0%, #89e148 100%);
+}
+
+.wallet .amount {
+  margin-left: 4px;
+  color: var(--green);
+}
+
+.expenses .amount {
+  margin-left: 4px;
+  color: var(--oragne);
+}
+
+.wallet .btn:hover {
+  background: linear-gradient(-54deg, #b5dc52 0%, #89e148 100%);
+}
+
+.expenses .btn {
+  background: linear-gradient(90deg, #ff9595 0%, #ff4747 80%, #ff3838 100%);
+}
+
+.expenses .btn:hover {
+  background: linear-gradient(-54deg, #ff9595 0%, #ff4747 80%, #ff3838 100%);
+}
+
+.chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .label,
+.content .amount {
+  font-size: 2rem;
+  font-weight: 600;
+}

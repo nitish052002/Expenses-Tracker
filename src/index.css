@@ -2,15 +2,19 @@
 
 :root {
   --bg: #3b3b3b;
-  --orange: #ff9304;
+  --secondary-orange: #ff9304;
   --purple: #a000ff;
   --yellow: #fde006;
-  --green: #43967b;
+  --green: #9DFF5B;
   --red: #ff3e3e;
   --grey: #626262;
-  --secondary-grey: #9b9b9b;
+  --secondary-grey: #9B9B9B;
   --secondary-purple: #8784d2;
-  --secondary-oragne: #f4bb4a;
+  --orange: #F4BB4A;
+  --radius-md : 11px ;
+  --shadow-one :   rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  --shadow-two : rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  --shadow-three : rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 * {
@@ -19,15 +23,34 @@
   box-sizing: border-box;
 }
 
+input,img {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background: var(--bg);
-  display: grid;
   height: 100vh;
-  place-items: center;
   color: white;
   font-family: "Ubuntu Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-   
+  padding: 12px;
 }
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+button , input {
+  outline: none;
+  border: none;
+}
+
+

@@ -1,0 +1,26 @@
+.expenseContainer {
+  background: white;
+  color: black;
+  border-radius: var(--radius-md);
+  height: 320px;
+  padding: 0   0  ;
+  color: black;
+  border-radius: var(--radius-md);
+  padding:1rem;
+  overflow-y: auto;
+  
+}
+
+
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding: 11px; /* Add bottom padding */
+  color: white; /* White text color */
+  margin-bottom: 1rem;
+  background: #8784D2;
+  border-radius: 0 10px 10px 0;
+}
+
+ 
+ 
